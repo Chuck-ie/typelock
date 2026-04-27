@@ -1,0 +1,33 @@
+[package]
+name = "typelock"
+version = "0.5.1"
+edition = "2024"
+description = "Enforce security boundaries at the Type level"
+readme = "../README.md"
+repository = "https://github.com/tomeiri/typelock"
+license = "MIT"
+
+[features]
+wincode-codec = ["dep:wincode"]
+diesel = ["dep:diesel"]
+
+[[test]]
+name = "lock-schema"
+path = "tests/lock_schema.rs"
+
+[[test]]
+name = "wincode-codec"
+path = "tests/wincode_codec.rs"
+required-features = ["wincode-codec"]
+
+[[test]]
+name = "enum-encryption"
+path = "tests/enum_encryption.rs"
+required-features = ["wincode-codec"]
+
+[dependencies]
+# typelock-derive = "0.5.1"
+# used for easier local debugging
+typelock-derive = { path = "../typelock-derive" }
+wincode = { version = "0.4.4", optional = true, features = ["derive"] }
+diesel = { version = "2.3.6", optional = true }
