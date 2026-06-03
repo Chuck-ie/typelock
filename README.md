@@ -1,5 +1,5 @@
 # Typelock
-[![CI](https://github.com/tomeiri/typelock/actions/workflows/rust.yml/badge.svg)](https://github.com/tomeiri/typelock/actions/workflows/rust.yml)
+[![CI](https://github.com/Chuck-ie/typelock/actions/workflows/rust.yml/badge.svg)](https://github.com/Chuck-ie/typelock/actions/workflows/rust.yml)
 [![crates.io](https://img.shields.io/crates/v/typelock.svg)](https://crates.io/crates/typelock)
 [![docs.rs](https://docs.rs/typelock/badge.svg)](https://docs.rs/typelock)
 
